@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: normal normal 100%/140% $font-stack;
+  color: #333;
+}
+
+#app {
+  width: 100%;
+  @include vertical-align;
+}
+
+.mighty-button-container {
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: #13547a;
+    color: $white;
+    box-shadow: 0 0 10px #757575;
+    border: none;
+    outline: none;
+    @include transition(all, 0.15);
+
+    &:hover {
+      background: #80d0c7;
+    }
+
+    &:active {
+      box-shadow: 0 0 3px #757575;
+    }
+  }
+}
+
+.counter {
+  padding: 40px 0 0;
+  text-align: center;
+    p {
+      font-size: 18px;
+    }
+}
